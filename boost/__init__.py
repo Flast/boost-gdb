@@ -7,6 +7,8 @@
 import gdb.printing
 
 import boost.core
+import boost.fusion
 
 def register_boost_printers():
     gdb.printing.register_pretty_printer(None, boost.core.PP)
+    gdb.printing.register_pretty_printer(None, boost.fusion.PP)
