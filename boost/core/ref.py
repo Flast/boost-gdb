@@ -21,7 +21,7 @@ class RefPrinter:
         type = self.val.type.tag
         ptr = self.val['t_']
         value = ptr.dereference()
-        return type + '{ *(' + str(ptr.type) + ')' + str(ptr) + ' = ' + str(value) + ' }'
+        return type + '{*(' + str(ptr.type) + ')' + str(ptr) + ' = ' + str(value) + '}'
 
     def display_hint(self):
         return 'boost::reference_wrapper'
